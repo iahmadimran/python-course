@@ -29,7 +29,7 @@ message = "Hello World."
 
 # Checking all the ways to combine the string
 greeting = "Hello"
-name = "Ahmad"
+# name = "Ahmad"
 
 # my_message = greeting + ", " + name + ". Welcome!"
 
