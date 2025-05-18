@@ -42,4 +42,4 @@ float_num = 3.54
 # print(num >= float_num)
 # print(num <= float_num)
 
-print("Integers and floats lesson is done.")
+print("Integers and floats lesson has completed.")
