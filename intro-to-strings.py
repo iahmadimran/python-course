@@ -29,10 +29,19 @@ message = "Hello World."
 
 # Checking all the ways to combine the string
 greeting = "Hello"
-# name = "Ahmad"
+name = "Ahmad"
 
 # my_message = greeting + ", " + name + ". Welcome!"
 
 my_message = f"{greeting}, {name}. Welcome!" # f string
 
-print(my_message)
+# print(my_message)
+
+# Exercises
+
+# str = 'Thirty' + ' ' + 'Days ' + "of" + " Python"
+# str_2 = "Coding " + 'for ' + 'all'
+# print(str_2)
+
+company = 'Facebook, Google, Amazon, Microsoft, Apple, IBM, Oracle'
+print(company[0:8])
