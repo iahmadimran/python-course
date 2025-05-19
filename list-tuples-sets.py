@@ -6,9 +6,14 @@
 # print(nums)
 
 # Tuples
-
 # tuple_1 = ('History', "Math", 'Stats')
 # tuple_2 = tuple_1
 
 # print(tuple_1)
 # print(tuple_2)
+
+# Sets
+# cs_courses = {"Maths", "Computer Sciene", "English", "DSA"}
+# art_courses = {"Maths", "Art", "Design", "English"}
+
+# print(cs_courses.union(art_courses))
