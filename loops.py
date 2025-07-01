@@ -1,24 +1,24 @@
 # For loop
-# nums = [1, 2, 3, 4, 5]
+nums = [1, 2, 3, 4, 5]
 
 # for num in nums: 
-#   if num == 4:
+#   if num == 3:
 #     print('Found the number')
 #     continue
 #   print(num)
 
 # Nested for loop 
 
-# for num in nums:
+# for num in enumerate(nums):
 #   for letter in 'ahmad':
 #     print(num, letter)
 
 # For Range loop 
-def stars_triangles(n):
-  for i in range(1, n + 1):
-    print("*" * i)
+# def stars_triangles(n):
+#   for i in range(1, n + 1):
+#     print("*" * i)
 
-stars_triangles(6)
+# stars_triangles(6)
 
 # While loop
 # a = 4
