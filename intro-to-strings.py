@@ -10,7 +10,7 @@ message = "Hello World."
 # print(len(message))
 
 # Using indexes on the string 
-# print(message[5:13])
+# print(message[6:13])
 
 # Lowering the string using lower() method
 # print(message.lower())
@@ -44,4 +44,4 @@ my_message = f"{greeting}, {name}. Welcome!" # f string
 # print(str_2)
 
 company = 'Facebook, Google, Amazon, Microsoft, Apple, IBM, Oracle'
-print(company[0:8])
+print(company[0:16])
