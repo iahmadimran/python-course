@@ -2,7 +2,7 @@
 # import sys
 # import random
 # import math
-import antigravity
+# import antigravity
 
 courses = ["Maths", "Physics", "Computer Science", "Statistics"]
 
