@@ -1,8 +1,13 @@
 # import my_module as module
 # import sys
-import random
+# import random
+import math
 
 courses = ["Maths", "Physics", "Computer Science", "Statistics"]
+
+print(math.sin(math.radians(90)))
+print(math.log(4, 4))
+
 
 # random_course = random.choice(courses)
 # print(random_course)
