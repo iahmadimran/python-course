@@ -18,4 +18,20 @@ os.chdir('/Users/user/OneDrive/Desktop/')
 # mod_time = os.stat('ai-engineer-codebasics-roadmap.pdf').st_mtime
 # print(datetime.fromtimestamp(mod_time))
 
+# Walking through all the files in the operating systems
+# for dirpath, dirnames, filenames in os.walk('/Users/user/OneDrive/Desktop/'):
+#   print('Directories:', dirpath)
+#   print('Directory Names:', dirnames)
+#   print('File:', filenames)
+
+# Getting environment variables using os.environ
+# print(os.environ.get('HOMEPATH'))
+
+# Joining files through os.path.join()
+# file_path = os.path.join(os.environ.get('HOMEPATH'), 'demo.txt')
+
+# Exploring os.path methods
+# print(os.path.splitext('/tmp/test.txt'))
+
+# print(dir(os.path))
 # print(os.listdir())
