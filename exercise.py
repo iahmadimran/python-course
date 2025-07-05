@@ -134,10 +134,83 @@ bangladesh = ["dhaka", "khulna", "rangpur"]
 # else:
 #   print('sorry we do not know.')
 
-city1 = input('Enter 1st city name: ')
-city2 = input('Enter 2nd city name: ')
+# city1 = input('Enter 1st city name: ')
+# city2 = input('Enter 2nd city name: ')
 
-if (city1 in india and city2 in india) or (city1 in pakistan and city2 in pakistan) or (city1 in bangladesh and city2 in bangladesh):
-  print('Both of these cities are in same country')
-else:
-  print("They don't belong to same country")
+# if (city1 in india and city2 in india) or (city1 in pakistan and city2 in pakistan) or (city1 in bangladesh and city2 in bangladesh):
+#   print('Both of these cities are in same country')
+# else:
+#   print("They don't belong to same country")
+
+# Python for loop exercises
+
+result = ["heads","tails","tails","heads","tails","heads","heads","tails","tails","tails"]
+heads_count = 0
+for value in result:
+  if value == "heads":
+    heads_count += 1
+
+# print(heads_count)
+
+# for i in range(1, 11):
+#   if i % 2 != 0:
+#     print(i ** 2)
+
+expense_list = {
+  'January': 2340,
+  'February': 2500, 
+  'March': 2100, 
+  'April': 3100, 
+  'May': 2980,
+}
+
+# user_expense_input = int(input("Enter your expense amount: "))
+
+# for key, value in expense_list.items():
+#   if user_expense_input == value:
+#     print(f'This expense is occured in {key}.')
+#     break;
+# print(f"You haven't spent this {user_expense_input} in any month")
+
+# for i in range(1, 6):
+#   if i < 5:
+#     user_input = input('Are you tired? ')
+
+#   if user_input == 'yes' or user_input == "Yes":
+#     print("Very bad, you didn't finish your race")
+#     break
+#   elif i == 5 and (user_input == 'no' or user_input == 'No'):
+#     print('Congratulations, you have completed this race.')
+#   elif user_input == 'no' or user_input == 'No':
+#     continue
+
+# for i in range(1, 6):
+#   print('*' * i)
+
+# Python Functions exercise
+
+def calculate_area(base, height):
+  a = (1/2) * base * height
+  area = int(a)
+  print(area)
+
+
+# calculate_area(4, 6)
+
+def calculate_area(base, height, shape):
+  if shape == 'triangle':
+    tri_area = (1/2) * base * height
+    triangle_area = int(tri_area)
+    print(triangle_area)
+  elif shape == 'rectangle':
+    rec_area = base * height
+    rectangle_area = int(rec_area)
+    print(rectangle_area)
+
+# calculate_area(4, 6, 'rectangle')
+
+def stars_pattern(n):
+ for i in range(1, n + 1):
+   print('*' * i)
+
+stars_pattern(6)
