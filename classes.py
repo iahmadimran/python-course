@@ -6,17 +6,16 @@ class Cars:
     self.model = car_model
   
   def sports_car(self):
-    for car in sports_cars:
-      if car == self.car:
-        print(f'your car which is {self.car} is very great')
-      else:
-        print(f'Your car which is {self.car} is just average because it cannot beat supercars')
-    # if sports_cars[self.car] and self.model > 2020:
-    # elif sports_cars[self.car] and self.model < 2020:
-    # else:
+    if (self.car == 'ferrari' or self.car =='lamborghini' or self.car =='mclaren' or self.car =='koenisegg' or self.car =='pagani' or self.car =='porsche' or self.car =='bmw' or self.car =='corvette' or self.car =='maserati') and self.model > 2020:
+      print(f'your car which is {self.car} is very great')
+    elif (self.car == 'ferrari' or self.car =='lamborghini' or self.car =='mclaren' or self.car =='koenisegg' or self.car =='pagani' or self.car =='porsche' or self.car =='bmw' or self.car =='corvette' or self.car =='maserati') and self.model < 2020:
+      print(f'your car which is {self.car} is very good but you need to level up.')
+    else:
+      print(f'your car which is {self.car} is average because it cannot beat supercars')
+      
 
-my_car = Cars('lamborghini', 2022)
+my_car = Cars('mehran', 2022)
 my_car.sports_car()
 
-my_friends_car = Cars("koenisegg", 2025)
+my_friends_car = Cars("koenisegg", 2010)
 my_friends_car.sports_car()
