@@ -310,8 +310,63 @@ def calc_circle(radius):
   diameter = round(2 * radius, 2)
   return area, circumference, diameter
 
-if __name__ == '__main__':
-  r = input('Enter the radius: ')
-  rad = float(r)
-  area, c, d = calc_circle(rad)
-  print(f'The area, circumference and diameter of the circle is {area}, {c} and {d} respectively.')
+# if __name__ == '__main__':
+#   r = input('Enter the radius: ')
+#   rad = float(r)
+#   area, c, d = calc_circle(rad)
+#   print(f'The area, circumference and diameter of the circle is {area}, {c} and {d} respectively.')
+
+
+# Python Read Write File Exercises
+
+# with open('poem.txt', 'r') as f:
+#   poem = f.read()
+  
+# word_stats = {}
+# words = poem.split(' ')
+
+# for word in words:
+#   if word in word_stats:
+#     word_stats[word] += 1
+#   else:
+#     word_stats[word] = 1
+
+# print(word_stats)
+
+# word_occurances = list(word_stats.values())
+# max_count = max(word_occurances)
+# print("Max occurances of any word is:",max_count)
+
+# print("Words with max occurances are: ")
+# for word, count in word_stats.items():
+#   if count==max_count:
+#     print(word)
+
+
+# with open('stocks.csv', 'r') as f, open('output.csv', 'w') as out:
+#   out.write(f'Company Name, PE Ratio, PB Ratio \n')
+#   next(f)
+#   for line in f:
+#     tokens = line.split(',')
+#     stock = tokens[0]
+#     price = float(tokens[1])
+#     eps = float(tokens[2])
+#     book = float(tokens[3])
+#     pe_ratio = round(price / eps, 2)
+#     pb_ratio = round(price / book, 2)
+#     out.write(f'{stock}, {pe_ratio}, {pb_ratio}\n')
+
+class Employee:
+  def __init__(self, id, employee):
+    self.id = id
+    self.employee = employee
+    # print(f'The id of the employee is {self.id} and he/she is {self.employee}')
+  
+
+emp1 = Employee(1, 'Front-end developer')
+
+del emp1.id
+del emp1
+
+  
+
