@@ -213,4 +213,105 @@ def stars_pattern(n):
  for i in range(1, n + 1):
    print('*' * i)
 
-stars_pattern(6)
+# stars_pattern(6)
+
+# Python Dict and Tuples Exercises
+
+countries_population = {
+  'china': 143,
+  'india': 136,
+  'usa': 32,
+  'pakistan': 24,
+}
+
+# user_input = input('Enter: ')
+
+# if user_input == 'print' or user_input == 'Print':
+
+#   for country, population in countries_population.items():
+#     print(f'{country} ==> {population}')
+
+# elif user_input == 'add' or user_input == 'Add':
+
+#   country = input('Which country do you want to add? ')
+#   if country not in countries_population.keys():
+#     population = int(input('Enter its population in crores: '))
+#     countries_population[country] = population
+#     for country, population in countries_population.items():
+#       print(f'{country} ==> {population}')
+#   elif country in countries_population.keys():
+#     print("The country is already in the dictionary.")
+
+# elif user_input == 'remove' or user_input == "Remove":
+
+#   country_to_remove = input('Which country do you want to remove? ')
+#   if country_to_remove in countries_population.keys():
+#     countries_population.pop(country_to_remove, '')
+#     for country, population in countries_population.items():
+#       print(f'{country} ==> {population}')
+#   else:
+#     print('The country is already not in the dictionary.')
+
+# elif user_input == 'query' or user_input == 'Query':
+
+#   country_search = input('Which country you want to search for? ')
+#   if country_search in countries_population.keys():
+#     print(f'The population of {country_search} is', countries_population[country_search], 'crores')
+#   else: 
+#     print('Sorry, we do not have the data for this country.')
+
+# else: 
+#   print('Sorry you can only perform print, add, remove or query operation.')
+
+
+
+stock_prices = {
+  'info': [600,630,620],
+  'ril': [1430,1490,1567],
+  'mtl': [234,180,160],
+}
+
+# print(stock_prices.values())
+
+# user_input = input('Enter the operation you want to perform: ')
+
+# if user_input == 'print' or user_input == 'Print':
+
+#   for name, value in stock_prices.items():
+#     average = round((sum(value)) / len(value), 2)
+#     print(f'{name} ==> {value} ==> average: {average}')
+    
+# elif user_input == 'add' or user_input == "Add":
+
+#   stock_ticker = input('Enter the stock you want to add: ')
+#   stock_price = int(input('Enter the price of the stock you want to add: '))
+
+#   if stock_ticker in stock_prices.keys():
+#     stock_prices[stock_ticker].append(stock_price)
+#     for name, value in stock_prices.items():
+#       average = round((sum(value)) / len(value), 2)
+#       print(f'{name} ==> {value} ==> average: {average}')
+#   else:
+#     stock_prices[stock_ticker] = [stock_price]
+#     # print(stock_prices[stock_ticker])
+#     for name, value in stock_prices.items():
+#       average = round((sum(value)) / len(value), 2)
+#       print(f'{name} ==> {value} ==> average: {average}')
+
+# else:
+#   print('You can only perform print or add operation.')
+
+
+import math 
+
+def calc_circle(radius):
+  area = round(math.pi * (radius ** 2), 2)
+  circumference = round(2 * math.pi * radius, 2)
+  diameter = round(2 * radius, 2)
+  return area, circumference, diameter
+
+if __name__ == '__main__':
+  r = input('Enter the radius: ')
+  rad = float(r)
+  area, c, d = calc_circle(rad)
+  print(f'The area, circumference and diameter of the circle is {area}, {c} and {d} respectively.')
