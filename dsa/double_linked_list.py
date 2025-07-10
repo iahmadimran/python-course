@@ -141,7 +141,9 @@ class DoubleLinkedList:
         
         dllstr = ''
         while itr:
-            dllstr += str(itr.data) + ' --> ' if itr.prev else str(itr.data)
+            dllstr += str(itr.data)
+            if itr.prev:
+              dllstr += ' --> '
             itr = itr.prev
         
         print(dllstr)
