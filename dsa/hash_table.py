@@ -97,7 +97,7 @@ for word, count in word_stats.items():
 class HashTable:
   def __init__(self):
     self.MAX = 10
-    self.arr = [[] for i in range(self.MAX)]
+    self.arr = [None for i in range(self.MAX)]
   
   def get_hash(self, key):
     h = 0
@@ -109,37 +109,42 @@ class HashTable:
   def __setitem__(self, key, value):
     h = self.get_hash(key)
     start_index = h
-    while self.arr[h] is not []:
+    while self.arr[h] is not None:
       h = (h + 1) % self.MAX
       if start_index == h:
-        return
-      
-    self.arr[h] = value
+        break
+        
+    self.arr[h] = (key, value)
 
   
   def __getitem__(self, key):
     h = self.get_hash(key)
     start_index = h
-    while self.arr[h] is not []:
+    while self.arr[h] is not None:
       if self.arr[h][0] == key:
         return self.arr[h][1]
-
-      h = (h + 1) % self.MAX
-      if start_index == h:
-        break
         
-
-  
   def __delitem__(self, key):
     h = self.get_hash(key)
     start_index = h
+    while self.arr[h] is not None:
+      if self.arr[h][0] == key:
+        self.arr[h] = None
+      
+      h = (h + 1) % self.MAX
+      if start_index == h:
+        return
+      
+
     
 
  
-t = HashTable()
-t['march 6'] = 17
-t['march 17'] = 28
-# del t['march 17']
-print(t['march 17'])
+stock = HashTable()
+stock['may 7'] = 43
+stock['may 12'] = 65
+stock['may 18'] = 98
+stock['may 9'] = 65
+del stock['may 9']
+print(stock['may 12'])
 
-print(t.arr)
+print(stock.arr)
