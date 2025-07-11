@@ -134,10 +134,6 @@ class HashTable:
       h = (h + 1) % self.MAX
       if start_index == h:
         return
-      
-
-    
-
  
 stock = HashTable()
 stock['may 7'] = 43
