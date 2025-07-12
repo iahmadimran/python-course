@@ -20,6 +20,8 @@ class Queue:
 
 queue = Queue()
 
+# Queue exercises starts from here...
+# Exercise 1
 def place_order(orders):
   for order in orders:
     time.sleep(0.5)
@@ -33,18 +35,20 @@ def serve_order():
     order = queue.dequeue()
     print('Now serving order:', order)
 
+def binary_number():
+  numbers = [1,2,3,4,5,6,7,8,9,10]
+  for number in numbers:
+    print(bin(number))
+
 if __name__ == '__main__':
   orders = ['pizza','samosa','pasta','biryani','burger']
+  binary_number()
     
-  t1 = threading.Thread(target= place_order, args= (orders,))
-  t2 = threading.Thread(target= serve_order)
+  # t1 = threading.Thread(target= place_order, args= (orders,))
+  # t2 = threading.Thread(target= serve_order)
 
-  t1.start()
-  t2.start()
-
-
-
-
+  # t1.start()
+  # t2.start()
 
 # queue.enqueue('samosa')
 # queue.enqueue('pizza')

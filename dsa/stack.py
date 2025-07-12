@@ -19,6 +19,8 @@ class Stack:
   def size(self):
     return len(self.container)
 
+# Stack exercises starts from here...
+# Exercise 1
 def reverse_string(s):
   stack = Stack()
 
@@ -31,6 +33,7 @@ def reverse_string(s):
   
   return rstr
 
+# Exercise 2
 def is_balanced(expression):
   stack = Stack()
   opening = {'(': ')', '{': '}', '[': ']'}
