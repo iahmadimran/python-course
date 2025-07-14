@@ -32,6 +32,7 @@ def find_all_occurances(numbers_list, number_to_find):
   index = binary_search(numbers_list, number_to_find)
   indices = [index]
 
+  # Search the left side for any occurance
   i = index - 1
   while i >= 0:
     if numbers_list[i] == number_to_find:
@@ -40,6 +41,7 @@ def find_all_occurances(numbers_list, number_to_find):
       break
     i = i - 1
 
+  # Search the right side for any occurance
   i = index + 1
   while i < len(numbers_list):
     if numbers_list[i] == number_to_find:
@@ -47,7 +49,7 @@ def find_all_occurances(numbers_list, number_to_find):
     else:
       break
     i = i + 1
-  
+
   return sorted(indices)
 
 
@@ -72,8 +74,8 @@ def binary_recursive_search(numbers_list, number_to_find, left_index, right_inde
 
 
 if __name__ == "__main__":
-  numbers_list = [1,4,6,9,11,15,15,15,17,21,34,34,56]
-  number_to_find = 34
+  numbers_list = [1,4,6,9,11,15,15,15,17,17,17,17,17,17,17,21,34,34,56]
+  number_to_find = 17
 
   index = find_all_occurances(numbers_list, number_to_find)
   print(f'Number found at {index} in the binary search') 
