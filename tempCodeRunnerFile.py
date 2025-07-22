@@ -1,1 +1,0 @@
-pakistan and city2 in pakistan) or (city1 in bangladesh and city2 in bangladesh):
