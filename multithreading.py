@@ -5,13 +5,14 @@ def calculate_square(numbers):
   print('Calculating square of numbers')
   for number in numbers:
     time.sleep(0.1)
-    print(f'square:', number * number)
+    print('square: ' + str(number * number))
 
 def calculate_cube(numbers):
   print('Calculating cube of numbers')
   for number in numbers:
     time.sleep(0.1)
-    print(f'cube:', number * number * number)
+    print('cube: ' + str(number * number * number))
+
 
 arr = [4, 5, 6, 7]
 t = time.time()
